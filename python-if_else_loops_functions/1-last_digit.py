@@ -1,19 +1,18 @@
 #!/usr/bin/python3
 import random
-
-# Generate a random number between -10000 and 10000
 number = random.randint(-10000, 10000)
 
-# Calculate the last digit
+# Get the last digit (handling both posotive and negative numbers)
+last_digit = abs(number) % 10
 if number < 0:
-    last = ((number * -1) % 10) * -1
-else:
-    last = number % 10
+    last_digit = -last_digit # Ensure the last digit is negative if the number is negative
 
-# Print the result based on the value of the last digit
-if last > 5:
-    print("Last digit of {} is {} and is greater than 5".format(number, last))
-elif last == 0:
-    print("Last digit of {} is {} and is 0".format(number, last))
-elif last < 6 and last != 0:
-    print("Last digit of {} is {} and is less than 6 and not 0".format(number, last))
+# Print the output based on the value of the last digit
+print(f"Last_digit of {number} is {last_digit}", end=" ")
+
+if last_digit > 5:
+    print("and is greater than 5")
+elif last_digit == 0:
+    print("and is 0")
+else:
+    print("and is less that 6 and not 0")
