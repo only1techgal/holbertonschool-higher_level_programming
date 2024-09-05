@@ -12,6 +12,7 @@ def islower(c):
     """
     return 'a' <= c <= 'z'
 
+
 #  Test the function with the examples
 test_chars = ['a', 'H', 'A', '3', 'g']
 
