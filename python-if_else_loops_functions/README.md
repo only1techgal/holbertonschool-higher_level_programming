@@ -1,0 +1,1 @@
+This Project dives into Python - if/else, loops, functions
