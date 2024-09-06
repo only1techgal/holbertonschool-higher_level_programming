@@ -14,6 +14,4 @@ def uppercase(s):
         print(result)
 
 # Test the function
-uppercase("BEST")  # Expected to print: BEST
-uppercase("BEST SCHOOL 98 BATTERY STREET")  # Expected to print: BEST SCHOOL 98 BATTERY STREET
 uppercase("holberton")  # Expected to print: HOLBERTON
