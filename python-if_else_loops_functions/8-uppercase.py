@@ -1,28 +1,13 @@
 #!/usr/bin/python3
-
 def uppercase(s):
-    """
-    Prints the string s in uppercase followed by a new line.
-    
-    Parameters:
-    s (str): The string to be converted to uppercase.
-    """
-    result = ""
-
-    # Loop through each character in the string
     for char in s:
         if 'a' <= char <= 'z':
-            # Convert lowercase to uppercase
-            upper_char = chr(ord(char) - 32)
+            # Convert to uppercase
+            temp = chr(ord(char) - 32)
         else:
-            # Leave non-lowercase characters unchanged
-            upper_char = char
-        
-        # Append the character to the result string
-        result += upper_char
-
-    # Print the result string
-    print(result)
+            temp = char
+        print("{}".format(temp), end='')
+    print()  # Print a newline after the entire string has been processed
 
 # Test the function
 uppercase("BEST")
