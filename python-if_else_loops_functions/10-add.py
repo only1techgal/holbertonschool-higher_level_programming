@@ -11,7 +11,7 @@ def add(a, b):
     Returns:
     int: The sum of a and be.
     """
-    return a + be
+    return a + b
 
     # Test the function
     result1 = add(3, 98)
@@ -19,5 +19,5 @@ def add(a, b):
 
     print(result1) # Output should be: 101
     print(result2) # Output should be: 98
-    
+
     
