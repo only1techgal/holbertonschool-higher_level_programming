@@ -20,5 +20,5 @@ def fizzbuzz():
             print(i, end=" ")
 
 
-# Test the function by calling it corrrectly
+# Remove any duplicate calls to the function
 fizzbuzz()
