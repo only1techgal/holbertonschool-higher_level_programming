@@ -7,7 +7,7 @@ def add(a, b):
     Parametres:
     a (int): The first integer.
     b (int): The second integer.
-    
+
     Returns:
     int: The sum of a and be.
     """
@@ -17,7 +17,5 @@ def add(a, b):
     result1 = add(3, 98)
     result2 = add(98, 0)
 
-    print(result1) # Output should be: 101
-    print(result2) # Output should be: 98
-
-    
+    print(result1)  # Output should be: 101
+    print(result2)  # Output should be: 98
