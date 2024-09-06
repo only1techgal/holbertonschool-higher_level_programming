@@ -5,4 +5,4 @@ def uppercase(s):
     print(s)
 
 # Test function
-uppercase("holberton")  # Expected to print: holberton
+uppercase("HOLBERTON")  # Expected to print: HOLBERTON
