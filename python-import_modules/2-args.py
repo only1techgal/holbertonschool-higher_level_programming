@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-if __name__== "__main__":
+if __name__ == "__main__":
     import sys
 
 # Get the arguments excluding the script name
@@ -17,6 +17,6 @@ else:
     print("f{argc} arguments:")
 
 
-    # Print each argument with its posiion (starting from 1)
+# Print each argument with its posiion (starting from 1)
     for i, arg in enumerate(argv, 1):
         print(f"{i}: {arg}")
