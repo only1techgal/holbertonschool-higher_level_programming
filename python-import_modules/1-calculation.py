@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    from calculator_1 import add, sub, mul, div  # Import the calculation function
+    from calculator_1 import add, sub, mul, div  # Import the functions
 
     a = 10  # Assign 10 to a
     b = 5   # Assign 5 to b
