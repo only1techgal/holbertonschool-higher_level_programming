@@ -2,5 +2,7 @@
 
 def element_at(my_list, idx):
     # Retrieves an element from a list
-    for element in my_list:
-        print("{:d}.format(element)")
+    # idx should return none, if negative
+    if idx < 0 or idx >= len(my_list):
+        return none
+    return my_list[idx]
