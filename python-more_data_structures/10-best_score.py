@@ -2,6 +2,8 @@
 
 def best_score(a_dictionary):
     # Returns a key with the biggest integer value
-    if not a_dictionary:
+
+    if not a_dictionary or not isinstance(a_dictionary, dict):
         return None
-        best_key = max(a_dictionary, key=a_dictionary.get)
+
+    return max(a_dictionary, key=a_dictionary.get)
