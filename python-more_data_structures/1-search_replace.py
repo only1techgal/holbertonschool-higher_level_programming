@@ -2,16 +2,16 @@
 
 def search_replace(my_list, search, replace):
     # Replaces all occurances of an element by another in new list
-    new_list = []
+    new_list = [replace if item == search else item for item in my_list]
+    return new_list    
+    
+if __name__ == "__main__":
+    # Define the lists and replacements to be tests
+    test_cases = [
+        ([1, 2, 3, 4, 5, 4, 2, 1, 1, 4, 89], 2, 89),
+        ([1, 89, 3, 4, 5, 4, 89, 1, 1, 4, 89], 4, 2)
+    ]
 
-    for item in my_list:
-        # Check if the current element is the one to replace
-        if item == search:
-            # Append the replace value if it matches
-            new_list.append(replace)
-        else:
-                # Otherwise, a append the original element
-                new_list.append(item)
-
-        # Return the new list with replacements
-        return new_list
+    for my_list, search, replace in test_cases:
+        result = search_replace(my_list, search, replace)
+        print(result)  # Print each result on a new line
