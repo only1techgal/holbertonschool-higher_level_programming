@@ -3,7 +3,7 @@
 def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    
+
     special_characters = ['.', '?', ':']
     result = ""
     i = 0
@@ -18,6 +18,5 @@ def text_indentation(text):
                 i += 1
             continue
         i += 1
-    
 
     print(result.strip())
