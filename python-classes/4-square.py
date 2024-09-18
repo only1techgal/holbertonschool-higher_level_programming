@@ -8,18 +8,18 @@ Class Square that defines a square with a private instance attribute 'size'
 class Square:
     """
     Represents a square with a private size attribute.
-    
+
     Attributes:
         size (int): The size of the square. Must be an integer and >= 0.
     """
-    
+
     def __init__(self, size=0):
         """
         Initializes a new Square instance.
-        
+
         Args:
             size (int): The size of the square. Defaults to 0.
-        
+
         Raises:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
@@ -30,7 +30,7 @@ class Square:
     def size(self):
         """
         Retrieves the current size of the square.
-        
+
         Returns:
             int: The size of the square.
         """
@@ -40,10 +40,10 @@ class Square:
     def size(self, value):
         """
         Sets the size of the square with validation.
-        
+
         Args:
             value (int): The new size of the square.
-        
+
         Raises:
             TypeError: If value is not an integer.
             ValueError: If value is less than 0.
@@ -57,7 +57,7 @@ class Square:
     def area(self):
         """
         Calculates the area of the square.
-        
+
         Returns:
             int: The area of the square.
         """
