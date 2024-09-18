@@ -5,6 +5,7 @@ Class Square which defines a square with a private instance attribute 'size'
 Includes checks for valid size values
 """
 
+
 class Square:
     """
     A class that defines a square with private instance attribute size
@@ -16,7 +17,7 @@ class Square:
 
         Args:
             size (int): The size of the square, defaults to 0.
-        
+
         Raises:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
