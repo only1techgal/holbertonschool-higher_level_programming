@@ -1,4 +1,4 @@
->>> from 7-base_geometry import BaseGeometry
+echo '>>> from 7-base_geometry import BaseGeometry
 >>> bg = BaseGeometry()
 
 >>> bg.integer_validator("width", 5)
@@ -22,4 +22,4 @@ ValueError: distance must be greater than 0
 >>> bg.area()
 Traceback (most recent call last):
     ...
-Exception: area() is not implemented
+Exception: area() is not implemented' > ./tests/7-base_geometry.txt
