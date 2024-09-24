@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 class MyList(list):
     """Class that inherits and includes a method to print sorted list"""
