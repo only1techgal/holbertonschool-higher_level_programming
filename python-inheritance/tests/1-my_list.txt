@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+
+from 1-my_list import MyList
+
+def test_my_list():
+    # Create an instance of MyList
+    my_list = MyList()
+
+    # Append elements
+    my_list.append(3)
+    my_list.append(1)
+    my_list.append(4)
+    my_list.append(2)
+    my_list.append(5)
+
+    # Check the original list
+    print("Original list:", my_list)  # Expected: [3, 1, 4, 2, 5]
+
+    # Print the sorted list
+    print("Sorted list:")
+    my_list.print_sorted()  # Expected: [1, 2, 3, 4, 5]
+
+    # Ensure the original list remains unchanged
+    print("After sorting, original list:", my_list)  # Expected: [3, 1, 4, 2, 5]
+
+    # Test with an empty list
+    empty_list = MyList()
+    print("Empty list:")
+    empty_list.print_sorted()  # Expected: []
+
+    # Test with already sorted list
+    sorted_list = MyList([1, 2, 3, 4, 5])
+    print("Already sorted list:")
+    sorted_list.print_sorted()  # Expected: [1, 2, 3, 4, 5]
+
+    # Test with reverse sorted list
+    reverse_sorted_list = MyList([5, 4, 3, 2, 1])
+    print("Reverse sorted list:")
+    reverse_sorted_list.print_sorted()  # Expected: [1, 2, 3, 4, 5]
+
+if __name__ == "__main__":
+    test_my_list()
