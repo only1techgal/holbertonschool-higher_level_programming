@@ -1,0 +1,51 @@
+#!/usr/bin/python3
+"""
+Test file for the BaseGeometry class.
+
+This script tests the functionality of the BaseGeometry class,
+including the area method and integer validation.
+"""
+
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+def test_base_geometry():
+    """Function to test the BaseGeometry class."""
+    bg = BaseGeometry()
+
+    # Valid integer validation
+    try:
+        bg.integer_validator("my_int", 12)
+        print("my_int validation passed.")
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+    try:
+        bg.integer_validator("width", 89)
+        print("width validation passed.")
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+    # Test invalid integer validation
+    try:
+        bg.integer_validator("name", "John")  # Should raise TypeError
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+    try:
+        bg.integer_validator("age", 0)  # Should raise ValueError
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+    try:
+        bg.integer_validator("distance", -4)  # Should raise ValueError
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+    # Test area method
+    try:
+        print(bg.area())  # Should raise Exception
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+
+if __name__ == "__main__":
+    test_base_geometry()
