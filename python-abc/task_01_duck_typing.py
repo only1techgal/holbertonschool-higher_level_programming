@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from abc import ABC abstractmethod
+from abc import ABC, abstractmethod
 import math
 
 
@@ -45,3 +45,10 @@ def shape_info(shape):
     # No type checking, relies on duck typing
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
+
+
+if __name__=="__main__":
+    circle = Circle(radius=5)
+    rectangle = Rectangle(width=4, height=7)
+    shape_info(circle)
+    shape_info(rectangle)
