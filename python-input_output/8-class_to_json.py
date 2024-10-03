@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
 """
-This Module defines a function which returns the dictionary 
+This Module defines a function which returns the dictionary
 description with simple data structure for JSON serialization of
 an object.
 """
+
+
 def class_to_json(obj):
     """
     Returns the dictionary description for JSON of an object
