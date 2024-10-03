@@ -1,9 +1,10 @@
-#!/usr/binpython3
+#!/usr/bin/python3
 
 """
 This module defines a Student class with attributes and a method to
 retrieve a dictionary representation of the instance
 """
+
 
 class Student:
     """
@@ -14,6 +15,7 @@ class Student:
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
+
     def to_json(self):
 
         return {
