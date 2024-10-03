@@ -1,15 +1,20 @@
 #!/usr/bin/python3
 
+"""
+This Module defines a function which returns the dictionary 
+description with simple data structure for JSON serialization of
+an object.
+"""
 def class_to_json(obj):
-    """Return the dictionary description for JSON serialization of an object."""
-    attributes = {}
-    
-    for attr in dir(obj):
-        # Exclude private and built-in attributes
-        if not attr.startswith('_'):
-            value = getattr(obj, attr)
-            # Check if the value is serializable
-            if isinstance(value, (list, dict, str, int, bool)):
-                attributes[attr] = value
-                
-    return attributes
+    """
+    Returns the dictionary description for JSON of an object
+
+    Args
+        obj: An instance of a class
+
+    Returns:
+        A dictionary containing all atributes of the obj class
+        that are serializable into JSON format
+    """
+
+    return obj.__dict__

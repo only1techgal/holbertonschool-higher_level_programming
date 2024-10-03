@@ -3,8 +3,8 @@
 """Script to add command-line arguments to a list and save to a JSON file."""
 
 import sys
-from 5-save_to_json_file import save_to_json_file
-from 6-load_from_json_file import load_from_json_file
+from save_from_json_file = __import__('save_to_json')
+from load_from_json_file = __import__('load_from_json_file')
 
 
 def main():
