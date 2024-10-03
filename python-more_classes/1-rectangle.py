@@ -5,6 +5,7 @@ The class includes getters and setters for these attributes with
 appropriate error handling.
 """
 
+
 class Rectangle:
     """
     A class that defines a rectangle by its width and height.
@@ -42,7 +43,7 @@ class Rectangle:
 
         Args:
             value (int): The width of the rectangle.
-        
+
         Raises:
             TypeError: If the width is not an integer.
             ValueError: If the width is less than 0.
@@ -70,7 +71,7 @@ class Rectangle:
 
         Args:
             value (int): The height of the rectangle.
-        
+
         Raises:
             TypeError: If the height is not an integer.
             ValueError: If the height is less than 0.
