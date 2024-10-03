@@ -2,7 +2,7 @@
 
 class Rectangle:
     """
-    This class defines a rectangle by its width and height.
+    This module defines a rectangle class by its width and height.
     """
 
     def __init__(self, width=0, height=0):
