@@ -2,9 +2,10 @@
 
 import json
 
+
 def serialize_and_save_to_file(data, filename):
     """Serialize a Python dictionary and save it to a JSON file.
-    
+
     Args:
         data (dict): The Python dictionary to be serialized.
         filename (str): The filename where the JSON data will be saved.
@@ -16,12 +17,13 @@ def serialize_and_save_to_file(data, filename):
     except Exception as e:
         print(f"Error serializing data: {e}")
 
+
 def load_and_deserialize(filename):
     """Load and deserialize JSON data from a file into a Python dictionary.
-    
+
     Args:
-        filename (str): The filename from which to load and deserialize the data.
-    
+        filename (str): The filename to load and deserialize the data.
+
     Returns:
         dict: The deserialized Python dictionary.
     """
