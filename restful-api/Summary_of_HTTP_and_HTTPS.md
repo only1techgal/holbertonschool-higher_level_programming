@@ -49,3 +49,11 @@ Date: Tuesday, 08 Oct 2024 17:08:00 ET
         "username": "jennlUser"
     }
 }
+
+*Common HTTP methods and status codes*
+
+Method: Get, Description: Simply retrieves data from the server
+Status code: 404, Description: Not Found, Senario: When a requested page or resource isn't available on the server
+
+Method: Post, Description: Sends data to a server for processing
+Status code: 
