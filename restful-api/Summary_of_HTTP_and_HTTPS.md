@@ -1,3 +1,5 @@
+*Summary of HTTP and HTTPS*
+
 To start off, HTTP ( Hypertext Transfer Protocal) and HTTPS ( Hypertext Transfer Protocal Secure) serve as fundimental protocals between the client and the server.
 
 That is HTTP and HTTPS?
