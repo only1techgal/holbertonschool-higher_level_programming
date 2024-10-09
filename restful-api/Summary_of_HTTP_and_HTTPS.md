@@ -50,6 +50,7 @@ Date: Tuesday, 08 Oct 2024 17:08:00 ET
     }
 }
 
+
 *Common HTTP methods and status codes*
 
 Method: Get, Description: Simply retrieves data from the server
@@ -73,9 +74,8 @@ Status code: 204, Description: No content, Senario: A User updates a resource , 
 Method: Options, Description: Returns a list of HTTP methods which are supported and allowed
 Status code: 200, Description: OK, Senario: A developer sends an options request to check which methods are allowed for a specific API endpoint, and then the server lists then in the respose headers.
 
-Methods: Trace, Description: Diagnosis, debuggs and trouble shoots
+Method: Trace, Description: Diagnosis, debuggs and trouble shoots
 Status code: 200, Description: OK, Senario: A client sends a trace request to diagnose potential issues and the server responds with the echoed request headers and body.
 
-Methods: Connect, Description: Creates a coonection with a server-side resource.
+Method: Connect, Description: Creates a coonection with a server-side resource.
 Status code: 407, Description: Proxy authentication required, Senario: A client sends a connect request through a proxy server which requires authentication. Then the server responds with a 407 status, asking the client to provide valid credentials.
- 
