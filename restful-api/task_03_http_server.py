@@ -1,8 +1,6 @@
-#!/usr/bin/python3
-
+import json
 import http.server
 import socketserver
-import json
 
 class MyHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
@@ -31,10 +29,11 @@ class MyHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         else:
             # Handle undefined endpoints with 404 error
             self.send_response(404)
-            self.send_header('Content-type', 'text/plain')
+            self.send_header('Content-type', 'text/plain')  # Set correct content type
             self.end_headers()
-            self.wfile.write(b"404 Not Found")
+            self.wfile.write(b"404 Not Found")  # Simplified response for 404
 
+# Set the server to listen on port 8000
 PORT = 8000
 with socketserver.TCPServer(("", PORT), MyHTTPRequestHandler) as httpd:
     print(f"Serving on port {PORT}")
