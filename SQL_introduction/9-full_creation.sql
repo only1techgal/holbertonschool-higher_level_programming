@@ -5,16 +5,9 @@ CREATE TABLE IF NOT EXISTS second_table (
 	score INT
 );
 
--- Deletes all records from the table
--- DELETES FROM second_table;
-
 -- Inserts multiple rows into the second_table
-INSERT INTO second_table (id, name, score) VALUES
+INSERT IGNORE INTO second_table (id, name, score) VALUES
 (1, 'John', 10),
 (2, 'Alex', 3),
 (3, 'Bob', 14),
-(4, 'George', 8),
-ON DUPLICATE KEY UPDATE 
-    name = VALUES(name), 
-    score = VALUES(score); 
-
+(4, 'George', 8);
