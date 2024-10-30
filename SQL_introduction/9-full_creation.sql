@@ -11,12 +11,5 @@ INSERT INTO second_table (id, name, score) VALUES
 (2, 'Alex', 3),
 (3, 'Bob', 14),
 (4, 'George', 8),
-(11, 'A', 12),
-(12, 'B', 12),
-(13, 'C', 12),
-(14, 'D', 12)
-On DUPLICATE KEY UPDATE
-    name = VALUES(name),
-    score = VALUES(score);
 
 
