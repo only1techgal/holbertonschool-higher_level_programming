@@ -79,6 +79,11 @@ Output:
 [1, 2, 3, 99]
 
 
+    Python uses a pass-by-object-reference model. Function arguments are references to objects, not copies.
+For mutable objects, changes inside the function affect the original object.
+For immutable objects, changes inside the function do not affect the original object but may result in a new object being created.
+
+
     In conclusion, understanding Python’s approach to objects, mutability, and function arguments is vital for us as programmers. 
 By mastering these concepts, we are able type cleaner, more predictable code.
 Happy coding :) .
