@@ -1,0 +1,77 @@
+****************************************
+**DIVING INTO PYTHON: EVERYTHING IS OBJECT**
+****************************************
+
+    Python is a widely used programming language. 
+In this post i'll be sharing what i have learned about objects, types and how Phython treats mutable and immutable objects differently.
+I'll also be delving into how Python passes arguements to functions and what that means for mutable and immutable data. Lets commence.
+
+    In Python, everything is an object and each object has a n identity, type and a value. 
+The id() function is used to retrieve an object's memory address and is used for debugging.
+Example of a id function being utilised:
+
+a = [1, 2, 3]
+b = a
+
+print(id(a))    # Prints the memory address of a
+print(id(b))    # Prints the memory address of b
+
+Output:
+<some_memory_address>
+<some_memory_address>
+
+    The type() function is used to determine its type.
+Example of a type function being utilised:
+a = [23]    # Value assigned to 'a'
+b = a
+
+print(type(a))  # Prints the type of 'a'
+print(type(b))  # Prints the type of 'b'
+
+Output:
+<class 'list'>
+<class 'list'>
+
+
+    Mutable objects are objects which can be modified after they have been created. examples of such objects include
+lists, dictionaries and sets. Once the mutible object has been changed, it still withholds its identity or memory address.
+Example of a mutable object:
+l1 = [1, 2, 3]
+l2 = l1  # Both variables point to the same list
+l1.append(4)
+print(l2)  # [1, 2, 3, 4]
+print(id(l1) == id(l2))  # True
+
+Output:
+True
+
+    Immutable objects are objects which cannot be altered after they have been created. Examples of these objects to consider are
+integers, strings and tubles. Bare in mind that an operation that modifies an immutable object results in a new ojected being created.
+furthermore, Immutable objects remain unchanged after their creation, modification creates a new object instead of altering the original one.
+Example of a immutable object:
+a = "hello"
+b = a
+
+# modifies 'a' by assigning a new value
+a = "world"
+
+print(a)  # Output: world
+print(b)  # Output: hello
+
+Output: 
+world
+hello
+
+Comprehending mutability is crucial due to the fact that it is mandatory for writing efficient and bug-free code.
+it is highly possible that these objects can lead to side effects when passing to functions or shared across variables.
+Example of the modify function:
+def modify_list(lst):
+    lst.append(99)
+
+numbers = [1, 2, 3]
+modify_list(numbers)
+print(numbers)  # [1, 2, 3, 99]
+
+    In conclusion, understanding Python’s approach to objects, mutability, and function arguments is vital for us as programmers. 
+By mastering these concepts, we are able type cleaner, more predictable code.
+Happy coding :) .
