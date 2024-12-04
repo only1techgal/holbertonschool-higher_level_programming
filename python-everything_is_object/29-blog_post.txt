@@ -20,6 +20,7 @@ Output:
 <some_memory_address>
 <some_memory_address>
 
+
     The type() function is used to determine its type.
 Example of a type function being utilised:
 a = [23]    # Value assigned to 'a'
@@ -45,6 +46,7 @@ print(id(l1) == id(l2))  # True
 Output:
 True
 
+
     Immutable objects are objects which cannot be altered after they have been created. Examples of these objects to consider are
 integers, strings and tubles. Bare in mind that an operation that modifies an immutable object results in a new ojected being created.
 furthermore, Immutable objects remain unchanged after their creation, modification creates a new object instead of altering the original one.
@@ -62,6 +64,7 @@ Output:
 world
 hello
 
+
 Comprehending mutability is crucial due to the fact that it is mandatory for writing efficient and bug-free code.
 it is highly possible that these objects can lead to side effects when passing to functions or shared across variables.
 Example of the modify function:
@@ -71,6 +74,7 @@ def modify_list(lst):
 numbers = [1, 2, 3]
 modify_list(numbers)
 print(numbers)  # [1, 2, 3, 99]
+
 
     In conclusion, understanding Python’s approach to objects, mutability, and function arguments is vital for us as programmers. 
 By mastering these concepts, we are able type cleaner, more predictable code.
