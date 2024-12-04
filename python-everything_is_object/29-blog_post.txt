@@ -75,6 +75,9 @@ numbers = [1, 2, 3]
 modify_list(numbers)
 print(numbers)  # [1, 2, 3, 99]
 
+Output:
+[1, 2, 3, 99]
+
 
     In conclusion, understanding Python’s approach to objects, mutability, and function arguments is vital for us as programmers. 
 By mastering these concepts, we are able type cleaner, more predictable code.
